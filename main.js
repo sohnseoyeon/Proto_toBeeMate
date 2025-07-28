@@ -30,10 +30,10 @@ function animatePerson() {
   const personX = poster.x + poster.width * 0.5;              // 가로 중앙
   const personY = poster.y + poster.height * 0.6 + position;  // 세로 기준 + 애니메이션
 
-  person.style.left =  `${x}px`;
-  person.style.top  =  `${y}px`;
+  person.style.left =  `${personX}px`;
+  person.style.top  =  `${personY}px`;
   person.style.transform = 'translateX(-50%)';
-
+  
   requestAnimationFrame(animatePerson);
 }
 animatePerson();
