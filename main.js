@@ -5,7 +5,7 @@ const bgCanvas = document.getElementById("bg-canvas");
 const person = document.getElementById("person");
 
 let currentIndex = 1;
-const maxIndex = 4;
+const maxIndex = 8;
 let poster = { x: 0, y: 0, width: 0, height: 0 };
 
 function updatePosterSize() {
