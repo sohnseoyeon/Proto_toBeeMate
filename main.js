@@ -25,7 +25,15 @@ let position = 0;
 function animatePerson() {
   position += direction * 0.3;
   if (position >= 20 || position <= 0) direction *= -1;
-  person.style.bottom = `${baseBottom + position}px`;
+  
+  // poster.x/y 기준으로 사람 위치 계산
+  const personX = poster.x + poster.width * 0.5;              // 가로 중앙
+  const personY = poster.y + poster.height * 0.6 + position;  // 세로 기준 + 애니메이션
+
+  person.style.left =  `${personX}px`;
+  person.style.top  =  `${personY}px`;
+  person.style.transform = 'translateX(-50%)';
+  
   requestAnimationFrame(animatePerson);
 }
 animatePerson();
