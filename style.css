@@ -39,7 +39,7 @@ canvas#bg-canvas {
   position: absolute;
   z-index: 2;
   /* left: 50%; */
-  /* transform: translateX(10%); */
+  transform: translateX(-50%);
   /* bottom: 0px; */
   pointer-events: auto;
 }
