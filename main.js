@@ -23,7 +23,7 @@ const baseBottom = 0;
 let direction = 1;
 let position = 0;
 function animatePerson() {
-  position += direction * 0.3;
+  position += direction * 0.15;
   if (position >= 20 || position <= 0) direction *= -1;
   person.style.bottom = `${baseBottom + position}px`;
   requestAnimationFrame(animatePerson);
